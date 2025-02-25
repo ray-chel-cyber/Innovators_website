@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
-            <h2 className="text-2xl font-bold mb-4">Company Info</h2>
+            <h2 className="text-2xl font-bold mb-4">Cas-Tech Limited</h2>
             <p className="text-sm mb-2">
              Our mission is to deliver quality and sustainable value to our customers.
             </p>
