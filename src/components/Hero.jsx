@@ -15,8 +15,9 @@ const Hero = () => {
         <h1 className="text-4xl md:text-6xl font-bold mb-4 italic">Welcome to <span className='italics text-amber-700 text-6xl'>Cas-Tech Glue</span></h1>
         <p className="  max-w-2xl mb-6 font-light text-2xl">
           Sustainable and Environmentally-friendly adhesives
-        </p>
-        <button className="bg-white hover:bg-gray-600 text-gray-800 font-semibold py-3 px-6 rounded-lg text-lg">
+        </p> 
+        <button className="bg-white text-gray-800 font-semibold py-3 px-7 rounded-3xl text-lg transition duration-300 
+                   hover:bg-amber-700 hover:text-white">
           Shop
         </button>
       </div>

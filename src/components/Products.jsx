@@ -5,7 +5,7 @@ const products = [
     id: 1,
     name: "Cozy Handmade Sweater",
     price: "$45.00",
-    image: "../assets/images/Kids Will Love This Pennsylvania Dutch Whoopie Pies Recipe.jpg",
+    image: "https://via.placeholder.com/300",
   },
   {
     id: 2,
