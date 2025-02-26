@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-700 text-white py-10">
+    <footer className="bg-amber-700 text-white py-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div>
@@ -21,7 +21,7 @@ const Footer = () => {
               <a className="text-white hover:underline">+233 24 178 7585</a></p>
               <p className="text-sm flex items-center">
               <FaLocationCrosshairs className="mr-1" />
-              <a className="text-white hover:underline">Benyakrom Mosque</a></p>
+              <a className="text-white hover:underline"> Western Region, Beposo near Benyakrom Mosque</a></p>
           </div>
           
           <div>

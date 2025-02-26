@@ -16,9 +16,9 @@ const Hero = () => {
         <p className="  max-w-2xl mb-6 font-light text-2xl">
           Sustainable and Environmentally-friendly adhesives
         </p> 
-        <button className="bg-white text-gray-800 font-semibold py-3 px-7 rounded-3xl text-lg transition duration-300 
-                   hover:bg-amber-700 hover:text-white">
-          Shop
+        <button className="bg-amber-700 text-white font-semibold py-3 px-7 rounded-3xl text-lg transition duration-300 
+                   hover:bg-white hover:text-gray-800">
+          Shop Now
         </button>
       </div>
     </div>

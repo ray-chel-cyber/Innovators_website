@@ -6,9 +6,8 @@ import innovatorImage from '../assets/images/WhatsApp Image 2025-02-21 at 12.54.
 const AboutProduct = () => {
     return (
       <div className="flex flex-col md:flex-row items-center justify-center mb-10 p-8 bg-white  text-black relative space-y-8 md:space-y-0">
-        {/* Left Section (Text) */}
         <div className="w-full md:w-1/2 md:order-2 pl-8">
-          <h2 className="text-4xl font-bold mb-4 text-black">
+          <h2 className="text-4xl font-bold mb-4 text-gray-900">
             <span className='underline decoration-amber-700 underline-offset-8'>Meet</span> the Innovators
           </h2>
           <p className="text-lg mb-4 text-black font-sans">
@@ -22,7 +21,7 @@ const AboutProduct = () => {
           </p>
         </div>
         
-        {/* Right Section (Image) */}
+        
         <div className="w-full md:w-1/4 ">
           <img
             src={innovatorImage}

@@ -6,6 +6,8 @@ import LandingPage from "./pages/Landingpage";
 import About from './components/About';
 import AboutProduct from './components/AboutProduct';
 import Products from './components/Products';
+import Testimonials from './components/Testimonials';
+import Contact from './components/Contact';
 
 
 
@@ -31,7 +33,15 @@ function App() {
       element: <Products />
     },
 
-   
+    {
+      path: "/Contact",
+      element: <Contact />
+    },
+
+    {
+      path: "/Testimonals",
+      element: <Testimonials />
+    },
 
     
   ])
