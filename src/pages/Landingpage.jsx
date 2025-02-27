@@ -1,12 +1,14 @@
 import React from "react"
 import Hero from "../components/Hero"
 import About from "../components/About"
-import AboutProduct from "../components/AboutProduct"
+import AboutProduct from "../components/Innovator"
 import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
 import Products from "../components/Products"
 import Contact from "../components/Contact"
 import Testimonials from "../components/Testimonials"
+import Innovator from "../components/Innovator"
+import EmoticonSection from "../components/EmoticonSection"
 
 
 const LandingPage = () => {
@@ -17,7 +19,8 @@ const LandingPage = () => {
         <Navbar/>
         <Hero/>
         <About/>
-        <AboutProduct/>
+        <EmoticonSection/>
+        <Innovator/>
         <Products/>
         <Testimonials/>
         <Contact/>

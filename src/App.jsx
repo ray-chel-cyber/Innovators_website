@@ -4,10 +4,11 @@ import './App.css'
 import React from 'react';
 import LandingPage from "./pages/Landingpage";
 import About from './components/About';
-import AboutProduct from './components/AboutProduct';
 import Products from './components/Products';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import Innovator from './components/Innovator';
+import EmoticonSection from './components/EmoticonSection';
 
 
 
@@ -24,8 +25,13 @@ function App() {
     },
 
     {
-      path: "/AboutProduct",
-      element: <AboutProduct />
+      path: "/EmoticonSection",
+      element: <EmoticonSection />
+    },
+
+    {
+      path: "/Innovator",
+      element: <Innovator />
     },
 
     {
