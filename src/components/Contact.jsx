@@ -1,5 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 
 const Contact = () => {
   return (
@@ -11,7 +12,7 @@ const Contact = () => {
         </p>
 
         {/* Social Media Icons */}
-        <div className="flex justify-center space-x-6 mb-8">
+        <div className="flex justify-center space-x-6 mb-8 mt-3">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-transform transform hover:scale-110">
             <FaFacebookF size={30} />
           </a>
@@ -21,8 +22,8 @@ const Contact = () => {
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-400 transition-transform transform hover:scale-110">
             <FaTwitter size={30} />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-700 transition-transform transform hover:scale-110">
-            <FaLinkedin size={30} />
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-green-600 transition-transform transform hover:scale-110">
+            <FaWhatsapp size={30} />
           </a>
         </div>
 
