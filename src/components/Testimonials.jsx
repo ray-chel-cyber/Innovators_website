@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import React from "react";
+import { motion } from "framer-motion";
 import customerImage1 from "../assets/images/6ee0de12-90de-4634-bb81-d3f9b2649d40.jpg";
 import customerImage2 from "../assets/images/15faecdf-7402-4a29-845e-98c0b93f7a2e.jpg";
 import customerImage3 from "../assets/images/Beauty Model Photography.jpg";
@@ -10,7 +9,7 @@ const testimonials = [
     id: 1,
     name: "John Doe",
     image: customerImage1,
-    text: "This product changed my life!",
+    text: "This product changed my life! Definately using it more frequently",
     role: "Founder, Tech Co.",
   },
   {
@@ -29,103 +28,26 @@ const testimonials = [
   },
 ];
 
-
-const swipeVariants = {
-  enter: (direction) => ({
-    x: direction > 0 ? 100 : -100,
-    opacity: 0,
-  }),
-  center: {
-    x: 0,
-    opacity: 1,
-    transition: { duration: 0.6, ease: "easeOut" },
-  },
-  exit: (direction) => ({
-    x: direction > 0 ? -100 : 100,
-    opacity: 0,
-    transition: { duration: 0.6, ease: "easeIn" },
-  }),
-};
-
 const Testimonials = () => {
-  const [index, setIndex] = useState(0);
-  const [direction, setDirection] = useState(0);
-
-  const nextTestimonial = () => {
-    setDirection(1);
-    setIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-  };
-
-  const prevTestimonial = () => {
-    setDirection(-1);
-    setIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
-  };
-
   return (
-    <section className="bg-white py-16 flex flex-col items-center relative">
-      <div className="text-center px-4 max-w-4xl">
-       
-        <h2 className="text-4xl font-bold text-gray-900 mb-10">
-          <span className="underline decoration-amber-700 underline-offset-8">
-            What
-          </span>{" "}
-          Our Customers Say
-        </h2>
-
-        <div className="relative flex items-center justify-center w-full">
-         
-          <button
-            onClick={prevTestimonial}
-            className="absolute left-[-80px] md:left-[-100px] text-gray-600 hover:text-amber-700 transition"
-          >
-            <FaChevronLeft className="text-4xl" />
-          </button>
-
-         
-          <div className="w-full max-w-lg flex items-center justify-center">
-            <AnimatePresence custom={direction} mode="wait">
-              <motion.div
-                key={testimonials[index].id}
-                className="text-center p-6 w-full bg-white flex flex-col items-center"
-                variants={swipeVariants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                custom={direction}
-              >
-                <img
-                  src={testimonials[index].image}
-                  alt={testimonials[index].name}
-                  className="h-20 w-20 rounded-full mx-auto border border-gray-300 shadow-sm"
-                />
-                <h3 className="text-lg font-semibold text-gray-800 mt-4">
-                  {testimonials[index].name}
-                </h3>
-                <p className="text-sm text-amber-700 font-medium">{testimonials[index].role}</p>
-                <p className="text-gray-600 mt-3 italic">"{testimonials[index].text}"</p>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          
-          <button
-            onClick={nextTestimonial}
-            className="absolute right-[-80px] md:right-[-100px] text-gray-600 hover:text-amber-700 transition"
-          >
-            <FaChevronRight className="text-4xl" />
-          </button>
-        </div>
-
-        
-        <div className="flex justify-center mt-6 space-x-2">
-          {testimonials.map((_, i) => (
-            <div
-              key={i}
-              onClick={() => setIndex(i)}
-              className={`w-2 h-2 rounded-full cursor-pointer transition ${
-                i === index ? "bg-amber-700" : "bg-gray-300"
-              }`}
-            ></div>
+    <section className="bg-white py-12 flex justify-center">
+      <div className="container mx-auto text-center max-w-5xl">
+        <h2 className="text-4xl font-bold mb-10 text-gray-900"> <span className="underline decoration-amber-700 underline-offset-8">What</span> Our Customers Say</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+          {testimonials.map((testimonial) => (
+            <motion.div
+              key={testimonial.id}
+              className="bg-white p-6 rounded-lg shadow-lg transition-transform transform hover:scale-105 flex flex-col items-center text-center mx-auto"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="h-24 w-24 rounded-full overflow-hidden mb-4">
+                <img src={testimonial.image} alt={testimonial.name} className="h-full w-full object-cover" />
+              </div>
+              <h3 className="text-lg font-semibold">{testimonial.name}</h3>
+              <p className="text-gray-600 mt-2 italic">"{testimonial.text}"</p>
+            </motion.div>
           ))}
         </div>
       </div>
