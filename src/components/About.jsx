@@ -33,6 +33,7 @@ const textVariants = {
 const About = () => {
   return (
     <motion.div
+    id="about" 
       className="flex flex-col md:flex-row items-start justify-center p-8 mb-6"
       initial="hidden"
       whileInView="visible"
@@ -44,7 +45,7 @@ const About = () => {
         <img src={Image} alt="About" className="w-full h-auto rounded-lg border-amber-700 border-1" />
       </motion.div>
 
-      {/* Animated Text */}
+     
       <motion.div className="w-full md:w-1/2 pl-8" variants={textVariants}>
         <h2 className="text-4xl font-bold mb-4 text-gray-900">About Us</h2>
         <p className="text-lg">

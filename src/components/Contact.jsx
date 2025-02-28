@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaFacebookF, FaInstagram, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa6";
 
-// Animation Variants
+
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -17,6 +17,7 @@ const formVariants = {
 const Contact = () => {
   return (
     <motion.section
+    id="contact" 
       className="bg-white py-16"
       initial="hidden"
       whileInView="visible"
@@ -24,7 +25,7 @@ const Contact = () => {
       variants={sectionVariants}
     >
       <div className="max-w-3xl mx-auto px-6 text-center">
-        {/* Section Title */}
+       
         <motion.h2
           className="text-4xl font-bold text-gray-900 mb-4"
           initial="hidden"
@@ -48,7 +49,7 @@ const Contact = () => {
           Stay updated with our latest products, offers, and news. Follow us or subscribe to our newsletter.
         </motion.p>
 
-        {/* Social Media Icons */}
+        
         <motion.div
           className="flex justify-center space-x-6 mb-8 mt-3"
           initial="hidden"
@@ -68,7 +69,7 @@ const Contact = () => {
           ))}
         </motion.div>
 
-        {/* Contact Form */}
+       
         <motion.div
           className="bg-white p-8 rounded-lg shadow-lg max-w-md mx-auto"
           initial="hidden"
@@ -110,7 +111,7 @@ const Contact = () => {
           </form>
         </motion.div>
 
-        {/* Customer Support Info */}
+       
         <motion.div
           className="mt-8"
           initial="hidden"

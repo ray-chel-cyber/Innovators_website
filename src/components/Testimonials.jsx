@@ -29,7 +29,7 @@ const testimonials = [
   },
 ];
 
-// Animation Variants
+
 const swipeVariants = {
   enter: (direction) => ({
     x: direction > 0 ? 100 : -100,
@@ -64,7 +64,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white py-16 flex flex-col items-center relative">
       <div className="text-center px-4 max-w-4xl">
-        {/* Section Title */}
+       
         <h2 className="text-4xl font-bold text-gray-900 mb-10">
           <span className="underline decoration-amber-700 underline-offset-8">
             What
@@ -73,7 +73,7 @@ const Testimonials = () => {
         </h2>
 
         <div className="relative flex items-center justify-center w-full">
-          {/* Left Arrow - Moved farther away */}
+         
           <button
             onClick={prevTestimonial}
             className="absolute left-[-80px] md:left-[-100px] text-gray-600 hover:text-amber-700 transition"
@@ -81,7 +81,7 @@ const Testimonials = () => {
             <FaChevronLeft className="text-4xl" />
           </button>
 
-          {/* Testimonial Card */}
+         
           <div className="w-full max-w-lg flex items-center justify-center">
             <AnimatePresence custom={direction} mode="wait">
               <motion.div
@@ -107,7 +107,7 @@ const Testimonials = () => {
             </AnimatePresence>
           </div>
 
-          {/* Right Arrow - Moved farther away */}
+          
           <button
             onClick={nextTestimonial}
             className="absolute right-[-80px] md:right-[-100px] text-gray-600 hover:text-amber-700 transition"
@@ -116,7 +116,7 @@ const Testimonials = () => {
           </button>
         </div>
 
-        {/* Dots Indicator */}
+        
         <div className="flex justify-center mt-6 space-x-2">
           {testimonials.map((_, i) => (
             <div

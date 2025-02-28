@@ -3,7 +3,7 @@ import Image1 from "../assets/images/The Safety Tips You Need to Know Before Coo
 import React from "react";
 import { motion } from "framer-motion";
 
-// Animation Variants
+
 const textVariants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
@@ -17,6 +17,7 @@ const buttonVariants = {
 const Hero = () => {
   return (
     <div
+    id="hero"
       className="relative h-screen bg-cover bg-center mb-14"
       style={{ backgroundImage: `url(${Image1})` }}
     >

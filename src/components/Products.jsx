@@ -6,13 +6,12 @@ import productImage3 from "../assets/images/Mix.jpg";
 import productImage4 from "../assets/images/Flour.jpg";
 
 const products = [
-  { id: 1, name: "Glue", price: "$45.00", image: productImage1 },
-  { id: 2, name: "Cassava Leave Glue", price: "$20.00", image: productImage2 },
-  { id: 3, name: "Cassava Adhesive", price: "$35.00", image: productImage3 },
-  { id: 4, name: "Natural Glue", price: "$50.00", image: productImage4 },
+  { id: 1, name: "Glue", price: "GH₵45.00", image: productImage1 },
+  { id: 2, name: "Cassava Leave Glue", price: "GH₵20.00", image: productImage2 },
+  { id: 3, name: "Cassava Adhesive", price: "GH₵35.00", image: productImage3 },
+  { id: 4, name: "Natural Glue", price: "GH₵50.00", image: productImage4 },
 ];
 
-// Animation Variants
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -34,6 +33,7 @@ const productVariants = {
 const Products = () => {
   return (
     <motion.div
+    id="products" 
       className="max-w-6xl mx-auto p-6 bg-white mb-5"
       initial="hidden"
       whileInView="visible"
@@ -47,7 +47,7 @@ const Products = () => {
         Products
       </h2>
 
-      {/* Product Grid */}
+      
       <motion.div
         className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         variants={containerVariants}

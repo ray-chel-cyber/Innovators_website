@@ -2,7 +2,7 @@ import React from "react";
 import { FaLeaf, FaRecycle, FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 
-// Animation Variants
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -43,22 +43,21 @@ const EmoticonSection = () => {
           className="grid grid-cols-1 sm:grid-cols-3 gap-4"
           variants={containerVariants}
         >
-          {/* Card 1 */}
+         
           <motion.div className="flex flex-col items-center" variants={itemVariants}>
             <FaLeaf className="text-amber-700 text-5xl mb-2" />
-            <h3 className="text-lg font-semibold">Environmentally Friendly</h3>
+            <h3 className="text-lg text-gray-900 font-semibold">Environmentally Friendly</h3>
           </motion.div>
 
-          {/* Card 2 */}
+         
           <motion.div className="flex flex-col items-center" variants={itemVariants}>
             <FaRecycle className="text-amber-700 text-5xl mb-2" />
-            <h3 className="text-lg font-semibold">Biodegradable</h3>
+            <h3 className="text-lg text-gray-900 font-semibold">Biodegradable</h3>
           </motion.div>
 
-          {/* Card 3 */}
           <motion.div className="flex flex-col items-center" variants={itemVariants}>
             <FaCheckCircle className="text-amber-700 text-5xl mb-2" />
-            <h3 className="text-lg font-semibold">100% Effective</h3>
+            <h3 className="text-lg text-gray-900 font-semibold">100% Effective</h3>
           </motion.div>
         </motion.div>
       </div>
