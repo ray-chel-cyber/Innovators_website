@@ -27,13 +27,13 @@ const EmoticonSection = () => {
     >
       <div className="container mx-auto text-center">
         <motion.h2
-          className="text-4xl text-gray-900 font-bold mb-20"
+          className="text-4xl text-gray-900 font-bold mb-15"
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: false, amount: 0.3 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="underline decoration-amber-700 underline-offset-8">
+          <span className="underline decoration-green-700 underline-offset-8">
             Our
           </span>{" "}
           Commitment

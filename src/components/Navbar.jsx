@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 
             ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
             
-            <div className="container mx-auto flex items-center justify-between max-w-6xl py-3 px-4">
+            <div className="container mx-auto flex items-center justify-between max-w-6xl py-3 px-3">
                 
                 <div className="flex items-center">
                     <ScrollLink to="hero" smooth={true} duration={500} className="cursor-pointer">
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <ScrollLink 
                         to="hero" smooth={true} duration={500} 
                         className={`cursor-pointer transition duration-300 ${
-                            isScrolled ? "text-gray-700 hover:underline decoration-amber-700" 
+                            isScrolled ? "text-green-700 hover:underline decoration-amber-700" 
                                       : "text-white hover:underline decoration-amber-700"
                         } underline-offset-8 decoration-2`}>
                         Home
@@ -50,7 +50,7 @@ const Navbar = () => {
                     <ScrollLink 
                         to="about" smooth={true} duration={500} 
                         className={`cursor-pointer transition duration-300 ${
-                            isScrolled ? "text-gray-700 hover:underline decoration-amber-700" 
+                            isScrolled ? "text-green-700 hover:underline decoration-amber-700" 
                                       : "text-white hover:underline decoration-amber-700"
                         } underline-offset-8 decoration-2`}>
                         About
@@ -58,7 +58,7 @@ const Navbar = () => {
                     <ScrollLink 
                         to="products" smooth={true} duration={500} 
                         className={`cursor-pointer transition duration-300 ${
-                            isScrolled ? "text-gray-700 hover:underline decoration-amber-700" 
+                            isScrolled ? "text-green-700 hover:underline decoration-amber-700" 
                                       : "text-white hover:underline decoration-amber-700"
                         } underline-offset-8 decoration-2`}>
                         Shop
@@ -66,7 +66,7 @@ const Navbar = () => {
                     <ScrollLink 
                         to="innovator" smooth={true} duration={500} 
                         className={`cursor-pointer transition duration-300 ${
-                            isScrolled ? "text-gray-700 hover:underline decoration-amber-700" 
+                            isScrolled ? "text-green-700 hover:underline decoration-amber-700" 
                                       : "text-white hover:underline decoration-amber-700"
                         } underline-offset-8 decoration-2`}>
                         Blog
@@ -74,7 +74,7 @@ const Navbar = () => {
                     <ScrollLink 
                         to="contact" smooth={true} duration={500} 
                         className={`cursor-pointer transition duration-300 ${
-                            isScrolled ? "text-gray-700 hover:underline decoration-amber-700" 
+                            isScrolled ? "text-green-700 hover:underline decoration-amber-700" 
                                       : "text-white hover:underline decoration-amber-700"
                         } underline-offset-8 decoration-2`}>
                         Contact
@@ -84,17 +84,17 @@ const Navbar = () => {
                 
                 <div className="flex items-center space-x-4">
                     <FaShoppingCart className={`text-xl transition duration-300 
-                        ${isScrolled ? "text-gray-700 hover:text-amber-700" : "text-white hover:text-amber-700"}`} />
+                        ${isScrolled ? "text-green-700 hover:text-amber-700" : "text-white hover:text-amber-700"}`} />
                     <FaUser className={`text-xl transition duration-300 
-                        ${isScrolled ? "text-gray-700 hover:text-amber-700" : "text-white hover:text-amber-700"}`} />
+                        ${isScrolled ? "text-green-700 hover:text-amber-700" : "text-white hover:text-amber-700"}`} />
                     <button className={`px-4 py-2 rounded-3xl text-sm font-medium transition duration-300 
-                        ${isScrolled ? "bg-gray-700 text-white hover:bg-amber-700" : "bg-amber-700 text-white hover:bg-gray-700"}`}>
+                        ${isScrolled ? "bg-green-700 text-white hover:bg-amber-700" : "bg-amber-700 text-white hover:bg-green-700"}`}>
                         Sign Up
                     </button>
                 </div>
 
                 
-                <button onClick={toggleMenu} className="md:hidden text-amber-700">
+                <button onClick={toggleMenu} className="md:hidden text-green-700">
                     {isOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
                 </button>
             </div>

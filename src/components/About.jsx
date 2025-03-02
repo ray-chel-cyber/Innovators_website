@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "../assets/images/O que é o polvilho doce_.jpg";
+import Image from "../assets/images/CassavaImage.png";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -49,7 +49,7 @@ const About = () => {
       <motion.div className="w-full md:w-1/2 pl-8" variants={textVariants}>
         <h2 className="text-4xl font-bold mb-4 text-gray-900">About Us</h2>
         <p className="text-lg">
-          <span className="italic text-2xl underline decoration-amber-700 underline-offset-8 decoration-2">
+          <span className="italic text-2xl underline decoration-green-700 underline-offset-8 decoration-2">
             Cas-Tech Glue
           </span>
           , an innovative solution from Beposo, Western Region, is addressing waste

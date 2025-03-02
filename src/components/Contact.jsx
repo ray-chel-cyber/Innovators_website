@@ -33,7 +33,7 @@ const Contact = () => {
           viewport={{ once: false, amount: 0.2 }}
           variants={sectionVariants}
         >
-          <span className="underline decoration-amber-700 underline-offset-8">
+          <span className="underline decoration-green-700 underline-offset-8">
             Connect
           </span>{" "}
           With Us
@@ -102,7 +102,7 @@ const Contact = () => {
             ></motion.textarea>
             <motion.button
               type="submit"
-              className="w-full bg-amber-700 text-white py-3 rounded-lg text-lg font-semibold hover:bg-gray-700 transition-all"
+              className="w-full bg-amber-700 text-white py-3 rounded-lg text-lg font-semibold hover:bg-green-700 transition-all"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -120,7 +120,7 @@ const Contact = () => {
           transition={{ delay: 0.6, duration: 0.6 }}
         >
           <p className="text-gray-700 font-semibold text-lg"> Customer Support:</p>
-          <p className="text-gray-600 text-md">+233 24 178 7585 | castechglue@gmail.com</p>
+          <p className="text-gray-600 text-md">+233 24 178 7585 | castechgluelimited@gmail.com</p>
         </motion.div>
       </div>
     </motion.section>

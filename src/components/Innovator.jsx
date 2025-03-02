@@ -65,7 +65,7 @@ const Innovator = () => {
       
       <motion.div className="w-full md:w-1/2 pl-8" variants={textVariants}>
         <h2 className="text-4xl font-bold mb-4 text-white">
-          <span className="underline decoration-white underline-offset-8">
+          <span className="underline decoration-green-700 underline-offset-8">
             Meet
           </span>{" "}
           the Innovators

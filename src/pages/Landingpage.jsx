@@ -9,6 +9,7 @@ import Contact from "../components/Contact"
 import Testimonials from "../components/Testimonials"
 import Innovator from "../components/Innovator"
 import EmoticonSection from "../components/EmoticonSection"
+import InstructionsSection from "../components/InstructionsSection"
 
 
 const LandingPage = () => {
@@ -22,6 +23,7 @@ const LandingPage = () => {
         <EmoticonSection/>
         <Innovator/>
         <Products/>
+        <InstructionsSection/>
         <Testimonials/>
         <Contact/>
         <Footer/>

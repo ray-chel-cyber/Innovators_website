@@ -9,6 +9,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Innovator from './components/Innovator';
 import EmoticonSection from './components/EmoticonSection';
+import InstructionsSection from './components/InstructionsSection';
 
 
 
@@ -43,6 +44,14 @@ function App() {
       path: "/Contact",
       element: <Contact />
     },
+
+
+    {
+      path: "/InstructionSection",
+      element: <InstructionsSection />
+    },
+
+
 
     {
       path: "/Testimonals",
