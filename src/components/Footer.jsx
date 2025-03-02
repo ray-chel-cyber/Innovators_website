@@ -34,6 +34,7 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
             <ul className="text-sm">
+            <li className="text-white hover:underline"><Link to="hero" >Home </Link></li>
               <li className="text-white hover:underline"><Link to="about" >About </Link></li>
               <li className="text-white hover:underline"><Link to="products" >Shop</Link></li>
               <li className="text-white hover:underline"><Link to="innovator" >Blog</Link></li>
