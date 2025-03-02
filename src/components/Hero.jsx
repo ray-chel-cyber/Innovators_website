@@ -21,7 +21,7 @@ const Hero = () => {
       className="relative h-screen bg-cover bg-center mb-14"
       style={{ backgroundImage: `url(${Image1})` }}
     >
-      <div className="absolute inset-0 bg-black/35"></div>
+      <div className="absolute inset-0 bg-black/32"></div>
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4">
         <motion.h1
           className="text-4xl md:text-6xl font-bold mb-4 italic"
