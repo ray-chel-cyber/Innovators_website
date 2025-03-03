@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -75,7 +75,7 @@ const Contact = () => {
             className="text-gray-600 hover:text-amber-700 transition-transform transform"
             whileHover={{ scale: 1.2, rotate: 4 }}
           >
-            <FaTwitter size={30} />
+            <FaLinkedinIn size={30} />
           </motion.a>
           <motion.a
             href="https://wa.me/233241787585"
@@ -100,21 +100,21 @@ const Contact = () => {
             <motion.input
               type="text"
               placeholder="Your Name"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-700 focus:outline-none"
+              className="w-full px-4 py-3 border-2 text-gray-600 border-gray-100 rounded-lg focus:ring-0 focus:ring-amber-700 focus:outline-none"
               required
               whileFocus={{ scale: 1.05 }}
             />
             <motion.input
               type="email"
               placeholder="Your Email"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-700 focus:outline-none"
+              className="w-full px-4 py-3 border-2 text-gray-600 border-gray-100 rounded-lg focus:ring-0 focus:ring-amber-700 focus:outline-none"
               required
               whileFocus={{ scale: 1.05 }}
             />
             <motion.textarea
               rows="4"
               placeholder="Your Message"
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-700 focus:outline-none"
+              className="w-full px-4 py-3 border-2 text-gray-600 border-gray-100 rounded-lg focus:ring-0 focus:ring-amber-700 focus:outline-none"
               required
               whileFocus={{ scale: 1.05 }}
             ></motion.textarea>

@@ -37,10 +37,10 @@ const About = () => {
       className="flex flex-col md:flex-row items-start justify-center p-8 mb-6"
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: false, amount: 0.2 }} // Allows repeated animation on scroll
+      viewport={{ once: false, amount: 0.2 }} 
       variants={containerVariants}
     >
-      {/* Animated Image */}
+      
       <motion.div className="w-full md:w-1/2" variants={imageVariants}>
         <img src={Image} alt="About" className="w-full h-auto rounded-lg border-amber-700 border-1" />
       </motion.div>

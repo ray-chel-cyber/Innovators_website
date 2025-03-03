@@ -55,7 +55,7 @@ const Footer = () => {
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin className="text-2xl text-white hover:text-blue-600" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/233241787585" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="text-2xl text-white hover:text-green-600" />
               </a>
 
@@ -83,18 +83,13 @@ const Footer = () => {
 
 
 
-
-
-
-
-
         <div className="mt-8 text-center">
           <h2 className="text-xl font-bold mb-4">Subscribe to Our Newsletter</h2>
           <form className="flex flex-col md:flex-row justify-center">
             <input
               type="email"
               placeholder="Enter your email"
-              className="p-2 rounded-md text-white border-2"
+              className="p-2 rounded-lg text-white border focus:outline-none"
               required
             />
             <button type="submit" className="mt-2 md:mt-0 md:ml-2 p-2 text-gray-700 bg-white rounded-md hover:bg-gray-300">

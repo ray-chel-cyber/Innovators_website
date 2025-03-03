@@ -20,7 +20,7 @@ const steps = [
     icon: <FaBalanceScale className="text-3xl text-green-700" />,
     title: "Step 2: Measure",
     description:
-      "Measure 200g of Cas-Tech glue into 1 liter.",
+      "Measure 200g of Cas-Tech glue into 1 liter. (5 times of glue is equal to of water)",
   },
   {
     icon: <FaMix className="text-3xl text-green-700" />,
@@ -32,12 +32,12 @@ const steps = [
     icon: <FaClock className="text-3xl text-green-700" />,
     title: "Step 4: Sitting",
     description:
-      "Allow it to sit for 20 minutes.",
+      "Allow it to sit for 10 minutes.",
   },
   {
     icon: <FaPaintBrush className="text-3xl text-green-700" />,
     title: "Step 5: Application",
-    description: "Apply the mixture on both surfaces",
+    description: "Apply the mixture on both surfaces to see 20 minutes results",
   },
 ];
 

@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Innovator from './components/Innovator';
 import EmoticonSection from './components/EmoticonSection';
 import InstructionsSection from './components/InstructionsSection';
+import Hero from './components/Hero';
 
 
 
@@ -24,7 +25,11 @@ function App() {
       path: "/About",
       element: <About />
     },
-
+    {
+      path: "/Hero",
+      element: <Hero />
+    },
+    
     {
       path: "/EmoticonSection",
       element: <EmoticonSection />

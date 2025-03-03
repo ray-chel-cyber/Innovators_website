@@ -94,7 +94,7 @@ const Navbar = () => {
                 </div>
 
                 
-                <button onClick={toggleMenu} className="md:hidden text-green-700">
+                <button onClick={toggleMenu} className="md:hidden text-amber-700">
                     {isOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
                 </button>
             </div>
