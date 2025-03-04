@@ -6,10 +6,10 @@ import productImage3 from "../assets/images/Product2.png";
 import productImage4 from "../assets/images/Product3.png";
 
 const products = [
-  { id: 1, name: "General Purpose Glue", price: "GH₵45.00", image: productImage1 },
-  { id: 2, name: "Wood Glue", price: "GH₵20.00", image: productImage2 },
-  { id: 3, name: "Heavy-Duty Glue", price: "GH₵35.00", image: productImage3 },
-  { id: 4, name: "Natural Glue", price: "GH₵50.00", image: productImage4 },
+  { id: 1, name: "General Purpose Glue", price: "GH₵45.00", image: productImage1, link:"https://paystack.com/buy/general-purpose-glue-oxxznj" },
+  { id: 2, name: "Wood Glue", price: "GH₵20.00", image: productImage2, link: "https://paystack.com/buy/cas-tech-glue-efovpo" },
+  { id: 3, name: "Heavy-Duty Glue", price: "GH₵35.00", image: productImage3, link: "https://paystack.com/buy/natural-glue-kxxhoq" },
+  { id: 4, name: "Natural Glue", price: "GH₵50.00", image: productImage4, link: "https://paystack.com/buy/wood-adhesive-xdsggp" },
 ];
 
 const containerVariants = {
@@ -33,7 +33,7 @@ const productVariants = {
 const Products = () => {
   return (
     <motion.div
-    id="products" 
+      id="products"
       className="max-w-6xl mx-auto p-6 bg-white mb-10"
       initial="hidden"
       whileInView="visible"
@@ -47,7 +47,6 @@ const Products = () => {
         Products
       </h2>
 
-      
       <motion.div
         className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
         variants={containerVariants}
@@ -67,9 +66,21 @@ const Products = () => {
               {product.name}
             </h3>
             <p className="text-amber-700 flex justify-center">{product.price}</p>
-            <button className="mt-4 bg-green-700 text-white py-2 px-4 rounded-md w-full hover:bg-amber-800 transition">
-              Add to Cart
-            </button>
+
+            {product.link ? (
+              <a
+                href={product.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 bg-green-700 text-white py-2 px-4 rounded-md w-full block text-center hover:bg-amber-800 transition"
+              >
+                Add to Cart
+              </a>
+            ) : (
+              <button className="mt-4 bg-green-700 text-white py-2 px-4 rounded-md w-full hover:bg-amber-800 transition">
+                Add to Cart
+              </button>
+            )}
           </motion.div>
         ))}
       </motion.div>

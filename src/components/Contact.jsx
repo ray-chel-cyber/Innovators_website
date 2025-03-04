@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -51,7 +51,7 @@ const Contact = () => {
           transition={{ delay: 0.4, duration: 0.6 }}
         >
           <motion.a
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/share/19oYoCMDr2/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-amber-700 transition-transform transform"
@@ -60,7 +60,7 @@ const Contact = () => {
             <FaFacebookF size={30} />
           </motion.a>
           <motion.a
-            href="https://www.instagram.com"
+            href="https://www.instagram.com/castechglue?igsh=MXhlNHliZmt0ZDlqbQ=="
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-amber-700 transition-transform transform"
@@ -75,7 +75,7 @@ const Contact = () => {
             className="text-gray-600 hover:text-amber-700 transition-transform transform"
             whileHover={{ scale: 1.2, rotate: 4 }}
           >
-            <FaLinkedinIn size={30} />
+            <FaTiktok   size={30} />
           </motion.a>
           <motion.a
             href="https://wa.me/233241787585"

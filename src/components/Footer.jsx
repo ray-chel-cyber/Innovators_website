@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaTiktok, } from 'react-icons/fa';
 import { FaLocationCrosshairs, FaWhatsapp } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 import visaLogo from "../assets/images/visacard.png";
@@ -46,14 +46,14 @@ const Footer = () => {
           <div className="md:ml-0">
             <h2 className="text-2xl font-bold mb-4">Follow Us</h2>
             <div className="flex justify-center space-x-4 mb-15">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/share/19oYoCMDr2/" target="_blank" rel="noopener noreferrer">
                 <FaFacebook className="text-2xl text-white hover:text-blue-500" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/castechglue?igsh=MXhlNHliZmt0ZDlqbQ==" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="text-2xl text-white hover:text-pink-500" />
               </a>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin className="text-2xl text-white hover:text-blue-600" />
+                <FaTiktok className="text-2xl text-white hover:text-black" />
               </a>
               <a href="https://wa.me/233241787585" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="text-2xl text-white hover:text-green-600" />
