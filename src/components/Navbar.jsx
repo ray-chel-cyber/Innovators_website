@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { FaUser, FaShoppingCart, FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../assets/images/WhatsApp Image 2025-02-21 at 7.29.12 PM.jpeg';
+import { div } from 'framer-motion/m';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -26,6 +27,7 @@ const Navbar = () => {
     };
 
     return (
+        <div className='overflow-x-hidden'>
         <nav className={`fixed top-0 w-full z-50 transition-all duration-300 
             ${isScrolled ? "bg-white shadow-md" : "bg-transparent"}`}>
             
@@ -123,6 +125,7 @@ const Navbar = () => {
                 </ScrollLink>
             </div>
         </nav>
+        </div>
     );
 };
 

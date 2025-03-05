@@ -15,7 +15,7 @@ import InstructionsSection from "../components/InstructionsSection"
 const LandingPage = () => {
     return (
       <div>
-           <div className='bg-white'>
+           <div className='bg-white overflow-x-hidden'>
           
         <Navbar/>
         <Hero/>

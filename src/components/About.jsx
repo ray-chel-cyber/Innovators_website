@@ -34,7 +34,7 @@ const About = () => {
   return (
     <motion.div
     id="about" 
-      className="flex flex-col md:flex-row items-start justify-center p-8 mb-6"
+      className="flex flex-col md:flex-row items-start justify-center p-8 mb-6 "
       initial="hidden"
       whileInView="visible"
       viewport={{ once: false, amount: 0.2 }} 

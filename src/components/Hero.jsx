@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative h-screen bg-cover bg-center mb-14"
+      className="relative h-screen bg-cover bg-center mb-14 "
       style={{ backgroundImage: `url(${Image1})` }}
     >
       <div className="absolute inset-0 bg-black/10"></div>
