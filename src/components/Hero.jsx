@@ -1,4 +1,4 @@
-import Image1 from "../assets/images/recettes et stylisme afrique, avec le manioc - Véronique de Fombelle Tanneur.jpg";
+import Image1 from "../assets/images/Véronique de Fombelle Tanneur.webp";
 import React from "react";
 import { motion } from "framer-motion";
 
