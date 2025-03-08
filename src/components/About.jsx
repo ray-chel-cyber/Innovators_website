@@ -60,6 +60,8 @@ const About = () => {
           not only reduces pollution but also adds value to cassava by-products,
           contributing to sustainable waste management.
         </p>
+
+        <p className="italic mt-4 text-gray-900">NB: Cas-Tech glue is mainly used for paper and for mixing of paint for an acrylic finish</p>
       </motion.div>
     </motion.div>
   );

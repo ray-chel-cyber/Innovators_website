@@ -6,10 +6,10 @@ import productImage3 from "../assets/images/Product2.png";
 import productImage4 from "../assets/images/Product3.png";
 
 const products = [
-  { id: 1, name: "General Purpose Glue", price: "GH₵45.00", image: productImage1, link:"https://paystack.com/buy/general-purpose-glue-oxxznj" },
+  { id: 1, name: "General Paper Glue", price: "GH₵20.00", image: productImage1, link:"https://paystack.com/buy/general-purpose-glue-oxxznj" },
   { id: 2, name: "Wood Glue", price: "GH₵20.00", image: productImage2, link: "https://paystack.com/buy/cas-tech-glue-efovpo" },
-  { id: 3, name: "Heavy-Duty Glue", price: "GH₵35.00", image: productImage3, link: "https://paystack.com/buy/natural-glue-kxxhoq" },
-  { id: 4, name: "Natural Glue", price: "GH₵50.00", image: productImage4, link: "https://paystack.com/buy/wood-adhesive-xdsggp" },
+  { id: 3, name: "Acrylic-Paint Glue", price: "GH₵20.00", image: productImage3, link: "https://paystack.com/buy/natural-glue-kxxhoq" },
+  { id: 4, name: "Natural Glue", price: "GH₵20.00", image: productImage4, link: "https://paystack.com/buy/wood-adhesive-xdsggp" },
 ];
 
 const containerVariants = {
