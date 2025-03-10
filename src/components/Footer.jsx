@@ -52,7 +52,7 @@ const Footer = () => {
               <a href="https://www.instagram.com/castechglue?igsh=MXhlNHliZmt0ZDlqbQ==" target="_blank" rel="noopener noreferrer">
                 <FaInstagram className="text-2xl text-white hover:text-pink-500" />
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tiktok.com/@budabdul?_t=ZM-8uVmD1ap0Y1&_r=1" target="_blank" rel="noopener noreferrer">
                 <FaTiktok className="text-2xl text-white hover:text-black" />
               </a>
               <a href="https://wa.me/233241787585" target="_blank" rel="noopener noreferrer">

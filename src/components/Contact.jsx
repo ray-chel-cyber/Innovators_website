@@ -69,7 +69,7 @@ const Contact = () => {
             <FaInstagram size={30} />
           </motion.a>
           <motion.a
-            href="https://www.twitter.com"
+            href="https://www.tiktok.com/@budabdul?_t=ZM-8uVmD1ap0Y1&_r=1"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-600 hover:text-amber-700 transition-transform transform"
